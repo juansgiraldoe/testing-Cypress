@@ -12,8 +12,5 @@ describe('Valiacion del fomrulario.', () => {
       .should('have.class', 'alert-danger')
       .invoke('text')
       .should('equal', 'Todos los campos son Obligatorios')
-
-
-
   });
 });

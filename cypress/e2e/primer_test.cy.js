@@ -3,7 +3,7 @@
 //Agrupar pruebas
 describe('Carga la pagina principal.', () => {
   it('Carga el homepage.', () => {
-    cy.visit('http://127.0.0.1:5500/index.html');
+    cy.visit('index.html');
 
     //Verificar el elemento y su texto.
     cy.contains('[data-cy="titulo-proyecto"]', 'Administrador de Pacientes de Veterinaria');
