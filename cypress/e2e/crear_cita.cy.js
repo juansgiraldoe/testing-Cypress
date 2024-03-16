@@ -1,7 +1,7 @@
 ///<reference types = "cypress"/>
 
-describe('Valiacion del fomrulario.', () => {
-  it('Submit al formulario y mostrar el mensaje de error.', ()=>{
+describe('LLenar los campos para crear y mostrar la cita.', () => {
+  it('Campos nueva cita.', ()=>{
     cy.visit('/index.html');
   
     cy.get('[data-cy=mascota-input]')
@@ -33,8 +33,5 @@ describe('Valiacion del fomrulario.', () => {
         .should('have.class', 'alert-success')
         .invoke('text')
         .should('equal', 'Se agregó correctamente')
-  
-  
-  
   });
 });
